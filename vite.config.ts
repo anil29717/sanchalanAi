@@ -5,6 +5,9 @@
 
   export default defineConfig({
     plugins: [react()],
+    build: {
+    outDir: 'dist' // <-- change from default 'build' to 'dist'
+  },
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
       alias: {
